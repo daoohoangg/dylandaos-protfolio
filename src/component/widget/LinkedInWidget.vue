@@ -1,9 +1,9 @@
 <template>
-  <div ref="container" class="relative w-full overflow-hidden" style="border-radius: 12px;">
+  <div ref="container" class="h-100 overflow-hidden transform md:scale-125 lg:scale-150 scale-135 scale-y-140 origin-top-left max-w-250" style="border-radius: 12px;">
     <div ref="badge"
-         class="badge-base LI-profile-badge"
+         class="badge-base LI-profile-badge max-w-75"
          data-locale="en_US"
-         data-size="medium"
+         data-size="large"
          data-theme="light"
          data-type="VERTICAL"
          data-vanity="daoohoangg"
@@ -28,7 +28,6 @@ onMounted(async () => {
     document.body.appendChild(script)
   }
 
-  // Wait for badge to render, then scale it
   setTimeout(() => {
     const containerWidth = container.value?.offsetWidth || 300
     const badgeWidth = badge.value?.offsetWidth || 400
@@ -36,14 +35,10 @@ onMounted(async () => {
     const scale = containerWidth / badgeWidth
     badge.value.style.transform = `scale(${scale})`
     badge.value.style.transformOrigin = 'top left'
-    badge.value.style.width = `${badgeWidth}px` // prevent collapse
-  }, 1000) // Delay to wait for LinkedIn badge to render
+    badge.value.style.width = `${badgeWidth}px`
+  }, 1)
 })
 </script>
 
 <style scoped>
-/* Optional height limit */
-div[ref="container"] {
-  max-width: 100%;
-}
 </style>

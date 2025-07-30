@@ -11,7 +11,7 @@
         <p class="mb-10">i think the things we develop are just as important as the things we choose not to.</p>
         <p class="mb-10">i think we should develop things that do the things we don't enjoy...</p>
         <p class="mb-10">i think there are too many things.</p>
-        <p class="mb-104">i think there should be fewer, but better things<span class="text-red-500">*</span>.</p>
+        <p class="mb-10">i think there should be fewer, but better things<span class="text-red-500">*</span>.</p>
         <p>the best things. an optimal amount.</p>
         <p class="text-gray-400 text-sm mt-4"><span class="text-red-500">*</span> Less, but better</p>
       </div>
