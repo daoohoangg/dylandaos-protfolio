@@ -1,6 +1,6 @@
 <template>
-  <div class="bg-gray-50 rounded-2xl shadow-md p-3">
-      <div class="flex items-center gap-2 mb-4">
+  <div class="bg-gray-50 rounded-2xl shadow-md p-3 w-full h-full">
+      <div class="flex items-center gap-2 mb-6">
         <div class="flex-grow">
           <h2 class="font-semibold text-lg">Hoang Trung Dao</h2>
           <p class="text-sm text-gray-500">linkedin@daoohoangg</p>

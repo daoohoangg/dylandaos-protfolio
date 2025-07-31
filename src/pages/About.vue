@@ -11,10 +11,10 @@ import ChatWithMe from '@/component/widget/ChatWithMe.vue';
             <AboutMe />
         </div>
         <div class="grid grid-rows-[auto_auto_auto_auto] gap-1 mx-5 mt-10 ">
-            <div class="row-span-1 col-span-2 h-100"><SpotifyWidget class="h-full"/></div>
-            <div class="grid col-span-1 md:col-span-2 mt-5">
-                <div><LinkedInWidget /></div>
-                <div><ApplePhotosWidget /></div>
+            <div class="row-span-1 col-span-2 md:grid-cols-2 h-100"><SpotifyWidget class="w-full h-full"/></div>
+            <div class="grid grid-cols-1 col-span-2 md:grid-cols-2 md:col-span-2 mt-5 gap-10">
+                <div class="w-full"><LinkedInWidget class="w-full"/></div>
+                <div class="w-full"><ApplePhotosWidget class="w-full"/></div>
             </div>
             <div class="col-span-2 row-span-1"><ChatWithMe class="w-full " /></div>
         </div>

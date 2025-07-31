@@ -1,7 +1,7 @@
 <template>
-  <div class="w-full max-w-3xl rounded-2xl bg-gray-50 p-6 shadow flex flex-col mt-10 h-[280px]">
+  <div class="w-full max-w-3xl rounded-2xl bg-gray-50 p-6 shadow flex flex-col mt-9 h-[280px]">
     
-    <div ref="messageBox" class="flex-1 overflow-y-auto flex flex-col gap-4 pr-1 scrollbar-none">
+    <div ref="messageBox" class="flex-1 overflow-y-auto flex flex-col gap-2 pr-1 scrollbar-none">
       <template v-for="(msg, idx) in messages" :key="idx">
         <div v-if="msg.from === 'me'" class="flex justify-end">
           <div class="bg-blue-500 text-white rounded-2xl rounded-tr-md px-5 py-2 max-w-xs text-right shadow"
