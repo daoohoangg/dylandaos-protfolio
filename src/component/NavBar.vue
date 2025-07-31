@@ -87,15 +87,13 @@ const updateHighlight = () => {
 
 
 onMounted(() => {
-  const saved = localStorage.getItem('activeTab')
-  if (saved) {
-    const index = menu.findIndex((m) => m.name === saved)
-    if (index !== -1) {
-    setActive(saved, index) 
+  const saved = localStorage.getItem('activeTab') || 'Home'
+  const index = menu.findIndex((m) => m.name === saved)
+  if (index !== -1) {
+    setActive(saved, index)
   }
-  }
-  nextTick(() => updateHighlight())
 })
+
 
 </script>
 

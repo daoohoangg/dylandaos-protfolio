@@ -65,7 +65,7 @@ const fixedConversation = [
   { from: 'Dylan', text: "what's your name?" },
   { from: 'me', text: "" },
   { from: 'Dylan', text: "nice to meet you!.🙌" },
-  { from: 'Dylan', text: "dm me on telegram/@daohoang2911 or mmhh... on this way ^^" }
+  { from: 'Dylan', text: "dm me on telegram @daohoang2911 or mmhh... on this way ^^" }
 ]
 
 const messages = ref([fixedConversation[0], fixedConversation[1]])
