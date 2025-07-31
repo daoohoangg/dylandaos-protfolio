@@ -91,9 +91,8 @@ onMounted(() => {
   if (saved) {
     const index = menu.findIndex((m) => m.name === saved)
     if (index !== -1) {
-      active.value = saved
-      activeIndex.value = index
-    }
+    setActive(saved, index) 
+  }
   }
   nextTick(() => updateHighlight())
 })
