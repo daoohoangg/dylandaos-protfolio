@@ -7,13 +7,15 @@ import ChatWithMe from '@/component/widget/ChatWithMe.vue';
 </script>
 <template>
    <div class="grid grid-cols-1 md:grid-cols-2 gap-1 p-1 h-200">
-        <div class="col-span-1 max-w-full h-full">
+        <div class="col-span-1 max-w-full">
             <AboutMe />
         </div>
-        <div class="grid grid-rows-5 gap-1 mx-5 h-full mt-10 ">
-            <div class="row-span-1 col-span-2 h-110"><SpotifyWidget class="h-full"/></div>
-            <div class="col-span-1 md:col-span-2 "><LinkedInWidget class="h-full"/></div>
-            <div class="col-span-1 md:col-span-2"><ApplePhotosWidget class="w-full h-full" /></div>
+        <div class="grid grid-rows-[auto_auto_auto_auto] gap-1 mx-5 mt-10 ">
+            <div class="row-span-1 col-span-2 h-100"><SpotifyWidget class="h-full"/></div>
+            <div class="grid col-span-1 md:col-span-2 mt-5">
+                <div><LinkedInWidget /></div>
+                <div><ApplePhotosWidget /></div>
+            </div>
             <div class="col-span-2 row-span-1"><ChatWithMe class="w-full " /></div>
         </div>
     </div>

@@ -1,13 +1,15 @@
-
 <template>
-  <nav class="sticky top-0 z-50 bg-white flex justify-center mt-10">
-    <div class="relative flex items-center space-x-2 px-3 py-2 bg-white rounded-full shadow-md border border-gray-200 ">
-
+  <nav class="sticky top-4 z-50 flex justify-center mt-10 overflow-visible">
+    <div
+      class="relative bg-white  flex items-center space-x-2 px-3 py-2 rounded-full shadow-md border border-gray-200"
+    >
+      <!-- Highlight indicator -->
       <div
         class="absolute z-0 bg-gray-100 rounded-full transition-all duration-300 ease-in-out max-w-23"
         :style="highlightStyle"
       ></div>
 
+      <!-- Menu items -->
       <div
         v-for="(item, i) in menu"
         :key="item.name"
@@ -15,21 +17,23 @@
         :class="active === item.name ? 'text-black font-semibold' : 'text-gray-500 hover:text-black'"
         ref="menuRefs"
       >
-        <a :href="item.href" @click="setActive(item.name, i)" >
+        <a :href="item.href" @click="setActive(item.name, i)">
           <span class="block w-full text-center">{{ item.name }}</span>
         </a>
       </div>
-
     </div>
-    
   </nav>
+
+  <!-- Look around -->
   <div class="flex justify-end text-gray-500">
-    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 24" stroke-width="1" stroke="currentColor" class="size-3 mt-2 mr-1 ">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 24" stroke-width="1" stroke="currentColor" class="size-3 mt-2 mr-1">
       <path stroke-linecap="round" stroke-linejoin="round" d="m11.99 16.5-3.75 3.75m0 0L4.49 16.5m3.75 3.75V3.75h11.25" />
     </svg>
-     Look around…
+    Look around…
   </div>
+  
 </template>
+
 
 <script setup>
 import { ref, onMounted, nextTick } from 'vue'
@@ -41,8 +45,10 @@ const menu = [
   { name: 'Contact', href: '/contact' }
 ]
 
-const active = ref(localStorage.getItem('activeTab') || 'Home')
-const activeIndex = ref(0)
+const savedActive = localStorage.getItem('activeTab') || 'Home'
+const active = ref(savedActive)
+const activeIndex = ref(menu.findIndex((m) => m.name === savedActive))
+
 const menuRefs = ref([]) 
 
 const setActive = (name, index) => {
@@ -95,5 +101,7 @@ onMounted(() => {
 </script>
 
 <style scoped>
-
+html, body {
+  overflow-y: visible;
+}
 </style>
