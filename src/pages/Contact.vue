@@ -8,7 +8,6 @@ import ContactWidget from '@/component/widget/ContactWidget.vue';
             <ChatWithMe />
         </div>
         <div class="col-span-1 md:col-span-2 "><ContactWidget class="h-full"/></div>
-    
     </div>
     
 </template>
