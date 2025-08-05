@@ -31,24 +31,19 @@
       <div class="md:col-span-3 space-y-6 ">
         <div>
           <h3 class="uppercase text-sm font-semibold text-gray-500 space-y-4">Description</h3>
-          <p>A food delivery app concept with custom trivia and express service.</p>
+          <p>An online wedding invitation card that allows users to create and customize their own invitations.</p>
         </div>
 
         <div class="mt-4">
           <h3 class="uppercase text-sm font-semibold text-gray-500 mt-10">Context</h3>
           <p>
-            I designed a concept food delivery app that utilizes gamification to help alleviate
-            the pain of high prices and long wait times that users encounter while using food
-            delivery apps.
+            I designed a concept online wedding invitation card that allows users to create and customize their own invitations.
           </p>
           <p class="mt-4">
-            Upon ordering, users are prompted with a custom trivia game they can play to earn
-            credits towards a future order. The trivia questions shown are unique to the restaurant
-            or entree that they ordered to help restaurants build a relationship with their delivery
-            customers.
+            This project showcases my ability to create user-friendly and visually appealing designs. I focused on intuitive navigation, elegant layouts, and responsive design to ensure a seamless experience across devices.
           </p>
         </div>
-        <div class="flex items-center mt-20">
+        <div class="flex items-center mt-10">
           <a class="inline-flex items-center px-6 py-3 border rounded-full hover:bg-gray-100 transition font-semibold gap-2"
             href="https://duyanh-daohe.vercel.app/" target="_blank">
             View The Card
