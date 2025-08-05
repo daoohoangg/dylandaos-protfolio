@@ -56,8 +56,5 @@
       </div>
 
     </div>
-
-    <!-- Button -->
-
   </div>
 </template>
