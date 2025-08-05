@@ -1,5 +1,5 @@
 <template>
-    <div class="mx-10 mt-10 font-sans max-w-full">
+    <div class="mx-5 mt-10 font-sans max-w-full">
       <div class="bg-gray-50 font-normal rounded-3xl shadow p-6 text-gray-500 text-2xl space-y-2">
         <h1 class="text-3xl font-medium text-black mb-4 font-sans">
           <span class="">What I'm bout.</span> 

@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-white rounded-xl shadow-md p-5 w-full max-w-md">
+  <div class="bg-gray-50 rounded-xl shadow-md p-5 max-w-full mt-10 mx-5">
     <!-- Icon -->
     <div class="flex items-center space-x-3 mb-4">
       <img src="" alt="DotOS Icon" class="w-10 h-10" />

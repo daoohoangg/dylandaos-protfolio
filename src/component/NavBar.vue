@@ -60,7 +60,7 @@ const setActive = (name, index) => {
 
 
 const highlightStyle = ref({
-  width: '0px',
+  width: '10px',
   height: '100%',
   transform: 'translateX(0px)',
 })

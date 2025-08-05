@@ -6,8 +6,8 @@ import ApplePhotosWidget from '@/component/widget/ApplePhotoWidget.vue';
 import ChatWithMe from '@/component/widget/ChatWithMe.vue';
 </script>
 <template>
-   <div class="grid grid-cols-1 md:grid-cols-2 gap-1 p-1 h-200">
-        <div class="col-span-1 max-w-full">
+   <div class="grid grid-cols-1 md:grid-cols-2 mx-6 h-200">
+        <div class="col-span-1 w-full">
             <AboutMe />
         </div>
         <div class="grid grid-rows-[auto_auto_auto_auto] gap-1 mx-5 mt-10 ">
