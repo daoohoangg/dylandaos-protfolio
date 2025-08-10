@@ -8,8 +8,8 @@
     
       <div class="flex items-center justify-between mb-4">
         <div>
-          <h2 class="text-3xl font-medium text-black mb-4 font-sans">Grocery Shop</h2>
-          <p class="text-2xl text-gray-500">A food order and delivery concept</p>
+          <h2 class="text-3xl font-medium text-black mb-4 font-sans">Note Book</h2>
+          <p class="text-2xl text-gray-500">Taking a note of everything</p>
         </div>
         <router-link
           to="/work/note-book"

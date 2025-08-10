@@ -40,7 +40,7 @@ const routes = [
     meta: { title: "NoteBook | Storage all of datas" },
   },
   {
-    path: "/work/opennft",
+    path: "/work/open-nft",
     name: "OpenNFT",
     component: OpenNFT,
     meta: { title: "OpenNFT | Million of NFTs and Tokens" },

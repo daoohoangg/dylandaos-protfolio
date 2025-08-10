@@ -9,7 +9,7 @@
       <div class="flex items-center justify-between mb-4">
         <div>
           <h2 class="text-3xl font-medium text-black mb-4 font-sans">Open NFT</h2>
-          <p class="text-2xl text-gray-500">A food order and delivery concept</p>
+          <p class="text-2xl text-gray-500">A trading NFTs and Tokens platform</p>
         </div>
         <router-link
           to="/work/open-nft"

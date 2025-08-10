@@ -7,8 +7,8 @@ import WeddingInvitationWidget from '@/component/project-widget/WeddingInvitatio
 </script>
 
 <template>
-    <div class="grid grid-cols-1 md:grid-cols-2 mx-10 h-200 gap-5">
-        <div class="col-span-1 w-full">
+    <div class="grid grid-cols-1 md:grid-cols-2 h-200 gap-x-20 w-full md:w-11/12 3xl:w-3/4  mx-auto">
+        <div class="col-span-1 w-full ">
             <OpenNftWidget />
         </div>
         <div class="col-span-1 w-full ">

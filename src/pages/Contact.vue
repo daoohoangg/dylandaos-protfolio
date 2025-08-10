@@ -3,8 +3,8 @@ import ChatWithMe from '@/component/widget/ChatWithMe.vue';
 import ContactWidget from '@/component/widget/ContactWidget.vue';
 </script>
 <template>
-    <div class="grid grid-cols-1 gap-1 p-1 h-[120px]">
-        <div class="col-span-1 max-w-full h-full flex items-center justify-center">
+    <div class="grid grid-cols-1 gap-1 p-1 h-[120px] w-full md:w-11/12 3xl:w-3/4  mx-auto">
+        <div class="col-span-1 h-full flex items-center justify-center">
             <ChatWithMe />
         </div>
         <div class="col-span-1 md:col-span-2 "><ContactWidget class="h-full"/></div>
