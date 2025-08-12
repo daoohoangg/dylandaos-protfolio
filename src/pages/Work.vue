@@ -22,4 +22,5 @@ import WeddingInvitationWidget from '@/component/project-widget/WeddingInvitatio
         </div>
         <router-view />
     </div>
+    
 </template>

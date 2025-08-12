@@ -2,7 +2,7 @@
     <div class="mx-10 mt-10 font-sans max-w-full h-full ">
       <div class="bg-gray-50 font-normal rounded-3xl shadow p-6 text-gray-500 text-2xl space-y-2">
         <h1 class="text-3xl font-medium text-black mb-4 font-sans">
-          <span class="">What I'm bout.</span> 
+          <span class="">What {{ displayedText }}</span>
         </h1>
         <hr class="mb-9 text-gray-300 height--1">
         <p class="text-bold text-xs font-medium mt-2">WHERE I'M FROM</p>
@@ -64,3 +64,50 @@
       </div>
     </div>
 </template>
+<script>
+  function loopTyping(vm, texts, speed = 100, delay = 1000) {
+  let textIndex = 0; // vị trí trong mảng texts
+  let charIndex = 0; // vị trí ký tự
+  let deleting = false; // trạng thái xóa hay gõ
+
+  function tick() {
+    const currentText = texts[textIndex];
+
+    if (!deleting) {
+      // Gõ chữ
+      vm.displayedText = currentText.substring(0, charIndex + 1);
+      charIndex++;
+      if (charIndex === currentText.length) {
+        deleting = true;
+        setTimeout(tick, delay); // chờ trước khi xóa
+        return;
+      }
+    } else {
+      // Xóa chữ
+      vm.displayedText = currentText.substring(0, charIndex - 1);
+      charIndex--;
+      if (charIndex === 0) {
+        deleting = false;
+        textIndex = (textIndex + 1) % texts.length; // chuyển sang text kế
+      }
+    }
+
+    setTimeout(tick, deleting ? speed / 2 : speed);
+  }
+
+  tick();
+}
+
+export default {
+  data() {
+    return {
+      displayedText: ""
+    };
+  },
+  mounted() {
+    loopTyping(this, [
+      "I'm bout.",
+    ], 100, 1500);
+  }
+};
+</script>
